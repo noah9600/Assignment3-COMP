@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+    <link rel="stylesheet" href="assignment3.css">
+
+    <style>
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .image {
+      width: calc(25% - 10px);
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+      @media (max-width: 800px) {
+        .image:nth-of-type(3),
+        .image:nth-of-type(4),
+        .image:nth-of-type(5),
+        .image:nth-of-type(6),
+        .image:nth-of-type(11),
+        .image:nth-of-type(12) {
+          display: none;
+        }
+
+        .image {
+          width: calc(50% - 10px);
+        }
+        .image-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+  
+       .image {
+       width: calc(50% - 5px);
+       margin-bottom: 10px;
+        }
+  
+      .image:nth-of-type(odd) {
+      margin-right: 10px;
+       }
+      }
+
+        @media (max-width: 600px) {
+      .image {
+        width: 100%;
+        height: auto;
+      }
+      .image-grid {
+        display: flex;
+      }
+        .image:nth-of-type(2),
+        .image:nth-of-type(3),
+        .image:nth-of-type(4),
+        .image:nth-of-type(6),
+        .image:nth-of-type(7),
+        .image:nth-of-type(5),
+        .image:nth-of-type(10),
+        .image:nth-of-type(11),
+        .image:nth-of-type(12) {
+          display: none;
+        }
+      }
+
+      </style>  
+</head>
+
+<body>
+    <div class="image-grid">
+      <img class="image" src="ales-krivec-N-aTikX-b00-unsplash.jpg" alt="1" />
+      <img class="image" src="ales-krivec-N-aTikX-b00-unsplash.jpg" alt="2" />
+      <img class="image" src="ales-krivec-N-aTikX-b00-unsplash.jpg" alt="3" />
+      <img class="image" src="ales-krivec-N-aTikX-b00-unsplash.jpg" alt="4" />
+
+      <img class="image" id="image" src="alessandro-sacchi-NUFnfYd09iI-unsplash.jpg" alt="5" />
+      <img class="image" id="image" src="alessandro-sacchi-NUFnfYd09iI-unsplash.jpg" alt="6" />
+      <img class="image" id="image" src="alessandro-sacchi-NUFnfYd09iI-unsplash.jpg" alt="7" />
+      <img class="image" id="image" src="alessandro-sacchi-NUFnfYd09iI-unsplash.jpg" alt="8" />
+
+      <img class="image" src="thomas-vimare-IZ01rjX0XQA-unsplash.jpg" alt="9" />
+      <img class="image" src="thomas-vimare-IZ01rjX0XQA-unsplash.jpg" alt="10" />
+      <img class="image" src="thomas-vimare-IZ01rjX0XQA-unsplash.jpg" alt="11" />
+      <img class="image" src="thomas-vimare-IZ01rjX0XQA-unsplash.jpg" alt="12" />
+  </div>
+</body>
+</html>
